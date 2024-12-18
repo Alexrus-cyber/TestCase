@@ -5,21 +5,14 @@
     min-height: 100vh;
     .container {
         @extend .containerAll;
-        flex-wrap: wrap;
         .subContainer {
             display: flex;
             flex-wrap: wrap;
             width: 100%;
             justify-items: center;
             justify-content: center;
-            .content {
-                display: flex;
-                width: fn.calcRem(300px);
-                height: fn.calcRem(350px);
-                background-color: aqua;
-                flex-direction: column;
-                margin: fn.calcRem(30px);
-            }
+            row-gap: 30px;
+            column-gap: 30px;
         }
         
     }

@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: column;
   letter-spacing: 0;
+  background-color: #282c34;
+  color: wheat;
 }
 
 .App-logo {

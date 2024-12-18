@@ -11,7 +11,7 @@
           "new": "Новинки"
         },
         "name": "Карабин охотничий Adler AD-500, калибр 308Win., L=510",
-        "preview_picture": "/upload/resize_cache/iblock/e13/200_200_1/e02rm12cwkqqeubx6bu9becysk0kewwd.webp",
+        "preview_picture": "https://ohotaktiv.ru/upload/resize_cache/iblock/e13/200_200_1/e02rm12cwkqqeubx6bu9becysk0kewwd.webp",
         "price": 120990,
         "price_discount": 119990,
         "quantity": 39,
@@ -24,7 +24,7 @@
           "discount": "Есть скидка"
         },
         "name": "Карабин Walther Colt M16, калибр 22Lr (190032) (Semiauto)",
-        "preview_picture": "/upload/resize_cache/iblock/188/200_200_1/xxyqz2jgqbnx6gsizpm83mfbj3tnf423.webp",
+        "preview_picture": "https://ohotaktiv.ru/upload/resize_cache/iblock/188/200_200_1/xxyqz2jgqbnx6gsizpm83mfbj3tnf423.webp",
         "price": 198900,
         "price_discount": 193900,
         "quantity": 4,
@@ -37,7 +37,7 @@
           "discount": "Есть скидка"
         },
         "name": "Карабин ВПО 192 Горностай, калибр 7,62*39, L=420",
-        "preview_picture": "/upload/resize_cache/iblock/d67/200_200_1/a3ti3n37js7yyuaqlkwgdvl77txav8i0.jpg",
+        "preview_picture": "https://ohotaktiv.ru/upload/resize_cache/iblock/188/200_200_1/xxyqz2jgqbnx6gsizpm83mfbj3tnf423.webp",
         "price": 94990,
         "price_discount": 89990,
         "quantity": 0,
@@ -484,5 +484,45 @@
     ],
     "perPage": {
       "page": 36
+    },
+    "basket": {
+      "items": [
+        {
+          "available": true,
+          "cml2_traits": {
+            "value": "00219004"
+          },
+          "id": 433732,
+          "labels": {
+            "discount": "Есть скидка"
+          },
+          "name": "Карабин Savage 64 TR-SR, калибр 22Lr, 16.5'' (Semiauto)",
+          "preview_picture": "/upload/resize_cache/iblock/ea6/200_200_1/9dsw3kernvb9wqpxl9utjulv9atn0wv9.webp",
+          "price": 155900,
+          "price_discount": 150900,
+          "quantity": 5,
+          "reviews": 0
+        }
+      ]
+    },
+    "favorite": {
+      "items": [
+        {
+          "available": true,
+          "cml2_traits": {
+            "value": "00219004"
+          },
+          "id": 433732,
+          "labels": {
+            "discount": "Есть скидка"
+          },
+          "name": "Карабин Savage 64 TR-SR, калибр 22Lr, 16.5'' (Semiauto)",
+          "preview_picture": "/upload/resize_cache/iblock/ea6/200_200_1/9dsw3kernvb9wqpxl9utjulv9atn0wv9.webp",
+          "price": 155900,
+          "price_discount": 150900,
+          "quantity": 5,
+          "reviews": 0
+        }
+      ]
     }
   }

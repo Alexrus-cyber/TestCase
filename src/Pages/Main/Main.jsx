@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import styles from "./Main.module.scss";
 import { useSelector, useDispatch } from "react-redux";
 import { getMenu, listMenuSelector } from "../../slices/main";
+import Cart from "./cart/Cart";
 
 const Main = () => {
     const items = useSelector(listMenuSelector);
@@ -9,16 +10,14 @@ const Main = () => {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(getMenu())
-    }, [])
+    }, [dispatch])
     console.log(isLoading)
     return (
         <section className={styles.main}>
             <div className={styles.container}>
                 <div className={styles.subContainer}>
-                    {items.map((item) => (<div className={styles.content} key={item.id}>
-                            <h1>{item.name}</h1>
-                            <p>{item.description}</p>
-                        </div>
+                    {items.map((item) => (
+                        <Cart key={item.id} {...item} />
                     ))}
                 </div>
             </div>

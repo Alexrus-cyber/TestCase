@@ -16,7 +16,7 @@ export const getMenu = createAsyncThunk(
     async (data, { rejectWithValue }) => {
         try {
             const response = await instance
-            .get(`items?_limit=${6}`)
+            .get(`items`)
             .then((response) => response);
             return response.data;
 

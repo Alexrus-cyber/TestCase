@@ -1,30 +1,58 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import {
+    createAsyncThunk,
+    createSelector,
+    createSlice,
+  } from "@reduxjs/toolkit";
+  import { instance } from "../API/API";
 
 const initialState = {
-    items: [],    
-    loading: false,
-    error: null,
-};
+    items: [],
+    isLoading: true,
+    error: "",
+  };
 
+export const getMenu = createAsyncThunk(
+    'getMenu',
+    async (data, { rejectWithValue }) => {
+        try {
+            const response = await instance
+            .get(`items?_limit=${6}`)
+            .then((response) => response);
+            return response.data;
+
+        } catch (e) {
+            return rejectWithValue(e)
+        }
+    }
+)
 
 export const menuSlice = createSlice({
     name: "menu",
     initialState,
     reducers: {
     },
-    extraReducers: {
-        [fetchMenu.pending]: (state) => {
-            state.loading = true;
-        },
-        [fetchMenu.fulfilled]: (state, action) => {
-            state.loading = false;
-            state.items = action.payload;
-        },
-        [fetchMenu.rejected]: (state, action) => {
-            state.loading = false;
-            state.error = action.error.message;
-        },
+    extraReducers: (builder) => {
+        builder
+            .addCase(getMenu.pending, (state) => {
+                state.isLoading = true
+            })
+            .addCase(getMenu.fulfilled, (state, {payload}) => {
+                state.isLoading = false 
+                state.items = payload;
+                console.log(state.items);
+            })
+            .addCase(getMenu.rejected, (state) => { 
+                state.isLoading = false
+            })    
     },
 });
+const { reducer } = menuSlice;
 
-export default menuSlice.reducer;
+const stateSelector = (state) => state?.menu;
+
+export const listMenuSelector = createSelector(
+    stateSelector,
+    (state) => state.items
+  );
+
+export default reducer;

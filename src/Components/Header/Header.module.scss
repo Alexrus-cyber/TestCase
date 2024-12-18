@@ -1,20 +1,20 @@
+@use "../../functions.scss" as fn;
+
 .header{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    max-height: 100px;
 }
 .container {
-    display: flex;
-    max-width: 1100px;
-    width: 1100px;
+    @extend .containerAll;
     justify-content: space-between;
 }
 
 .menu{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: fn.calcRem(20px);
     
     .img {
         max-width: 32px;
@@ -22,8 +22,8 @@
         position: relative;
         .counter {
             position: absolute;
-            width: 16px;
-            height: 16px;
+            width: fn.calcRem(16px);
+            height: fn.calcRem(16px);
             background-color: #d57d0b;
             border-radius: 50%;
             top: 0;

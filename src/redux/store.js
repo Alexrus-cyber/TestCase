@@ -3,19 +3,21 @@ import {
     configureStore,
   } from "@reduxjs/toolkit";
 
-import menuReducer from "./slices/main";
-import basketReducer from "./slices/basket";
-import galleryReducer from "./slices/favorite";
+import menuReducer from "../slices/main";
+import basketReducer from "../slices/basket";
+import favoriteReducer from "../slices/favorite";
 
 
 const rootReducer = combineReducers({
     menu: menuReducer,
     basket: basketReducer,
-    favorite: galleryReducer,
+    favorite: favoriteReducer,
   });
 
 export const store = configureStore({
-    reducer: rootReducer,
-})
-
-
+  reducer: rootReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false, // Отключаем проверку сериализации
+    }),
+});

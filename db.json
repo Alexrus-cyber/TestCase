@@ -1,470 +1,519 @@
 {
-    "countItems": {
-      "count": 36
+  "countItems": {
+    "count": 36
+  },
+  "items": [
+    {
+      "favorite": false,
+      "labels": {
+        "discount": "Есть скидка",
+        "new": "Новинки"
+      },
+      "name": "Карабин охотничий Adler AD-500, калибр 308Win., L=510",
+      "preview_picture": "https://ohotaktiv.ru/upload/resize_cache/iblock/e13/200_200_1/e02rm12cwkqqeubx6bu9becysk0kewwd.webp",
+      "price": 120990,
+      "price_discount": 119990,
+      "quantity": 39,
+      "reviews": 0,
+      "available": true,
+      "id": 608204
     },
+    {
+      "favorite": false,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин Walther Colt M16, калибр 22Lr (190032) (Semiauto)",
+      "preview_picture": "https://ohotaktiv.ru/upload/resize_cache/iblock/188/200_200_1/xxyqz2jgqbnx6gsizpm83mfbj3tnf423.webp",
+      "price": 198900,
+      "price_discount": 193900,
+      "quantity": 4,
+      "reviews": 0,
+      "available": true,
+      "id": 433576
+    },
+    {
+      "favorite": false,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин ВПО 192 Горностай, калибр 7,62*39, L=420",
+      "preview_picture": "https://ohotaktiv.ru/upload/resize_cache/iblock/188/200_200_1/xxyqz2jgqbnx6gsizpm83mfbj3tnf423.webp",
+      "price": 94990,
+      "price_discount": 89990,
+      "quantity": 0,
+      "reviews": 0,
+      "available": true,
+      "id": 432229
+    },
+    {
+      "favorite": false,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин Вепрь Хантер калибр 7,62х63 (.30-06) L=550 б/о",
+      "preview_picture": "/upload/resize_cache/iblock/666/200_200_1/o9c882o7ec446gcrcz6ev80za2f8vm5c.webp",
+      "price": 77490,
+      "price_discount": 72490,
+      "quantity": 0,
+      "reviews": 0,
+      "available": true,
+      "id": 14912
+    },
+    {
+      "favorite": false,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин охотничий модели МЕ16 калибра .22LR орех ",
+      "preview_picture": "/upload/resize_cache/iblock/822/200_200_1/dr525cuxb3dkn3zqir5i99ru7ht32z3s.webp",
+      "price": 92990,
+      "price_discount": 87990,
+      "quantity": 0,
+      "reviews": 0,
+      "available": true,
+      "id": 536844
+    },
+    {
+      "favorite": false,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Ружье Hatsan ESCORT BREAK-UP, калибр 12x76, полуавтомат газоотводный, camo-осенний лес, пластик, ствол 30\" (760)",
+      "price": 67990,
+      "price_discount": 63990,
+      "quantity": 0,
+      "reviews": 0,
+      "available": true,
+      "id": 46981
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Ружье Hatsan ESCORT DYNOVA, калибр 12x76, п/а-инерц, дерево, ствол 28\" (710)",
+      "preview_picture": "/upload/resize_cache/iblock/835/200_200_1/60b61m3stpnnr7kwx1c70jss9kin1nwg.webp",
+      "price": 31995,
+      "price_discount": 29990,
+      "quantity": 54,
+      "reviews": 0,
+      "favorite": true,
+      "id": 25151
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Ружье МР-155 12/76 орех 3д/н, полуавтомат газоотводный, цв. муш. сп. кр. никель L=750",
+      "preview_picture": "/upload/resize_cache/iblock/971/200_200_1/u87ss8fwo40rudw6qyrul4bzjbfgluns.webp",
+      "price": 46990,
+      "price_discount": 45990,
+      "quantity": 0,
+      "reviews": 0,
+      "favorite": true,
+      "id": 9601
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Ружье LEGEND Syn. Black reciever, 12/76, 760 мм",
+      "preview_picture": "/upload/resize_cache/iblock/a5a/200_200_1/67xtmtuma6l41xs1j3skl4qdqfemiebp.webp",
+      "price": 36990,
+      "price_discount": 34990,
+      "quantity": 74,
+      "reviews": 4,
+      "favorite": true,
+      "id": 269908
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка",
+        "first_weapon": "Подходит для первого оружия"
+      },
+      "name": "Ружье Sabatti AIRONE, калибр 12х76, экстрактор,один спусковой крючок, ствол 30\" (760), стволы ***/*, антабки",
+      "preview_picture": "/upload/resize_cache/iblock/250/200_200_1/i4qxacvcbw0rtcx6wtmtjcf6top147ly.webp",
+      "price": 134905,
+      "price_discount": 129900,
+      "quantity": 1,
+      "reviews": 0,
+      "favorite": true,
+      "id": 23563
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Ружье Сайга 12 исп. 340, пластик, телескопический приклад",
+      "preview_picture": "/upload/resize_cache/iblock/656/200_200_1/qf2j9dfy4rv7js2n1l53qkbfbo4le953.webp",
+      "price": 104990,
+      "price_discount": 103990,
+      "quantity": 0,
+      "reviews": 0,
+      "favorite": true,
+      "id": 35930
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Ружье Remington VERSA MAX CAMO калибр 12*89, длина ствола 26\"",
+      "preview_picture": "/upload/resize_cache/iblock/bec/200_200_1/ndr1qj1wlvkm1aw8b27g9hrjsx4fbrc2.webp",
+      "price": 188905,
+      "price_discount": 183900,
+      "quantity": 1,
+      "reviews": 0,
+      "favorite": true,
+      "id": 9513
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Ружьё МР-18МН калибр 7,62х51 (308 Win), береза L=600",
+      "preview_picture": "/upload/iblock/ffa/ffac964a614543ee354bc8b61b1d41f2.jpg",
+      "price": 24990,
+      "price_discount": 23990,
+      "quantity": 0,
+      "reviews": 0,
+      "favorite": true,
+      "id": 109180
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Ружьё МР-18МН калибр 7,62х51, орех",
+      "preview_picture": "/upload/resize_cache/iblock/c46/200_200_1/c46955c6e06717921b54a1a8e41257dd.jpg",
+      "price": 25790,
+      "price_discount": 24790,
+      "quantity": 0,
+      "reviews": 0,
+      "favorite": true,
+      "id": 109216
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин Вепрь-22 калибр 22LR, L-420",
+      "preview_picture": "/upload/resize_cache/iblock/9bd/200_200_1/9bd02b84b02c3126e97e6373a6f1c727.jpeg",
+      "price": 34990,
+      "price_discount": 29990,
+      "quantity": 0,
+      "reviews": 0,
+      "favorite": true,
+      "id": 34096
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин ВПО 183-01 Горностай, калибр 9*39, L=520мм",
+      "preview_picture": "/upload/resize_cache/iblock/c50/200_200_1/p99xqlxf4c7afgdrl9gncknn9psgr8mf.webp",
+      "price": 68900,
+      "price_discount": 63900,
+      "quantity": 15,
+      "reviews": 0,
+      "favorite": true,
+      "id": 431370
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин ВПО 183-02 Горностай, калибр 9*39, L=600мм",
+      "preview_picture": "/upload/resize_cache/iblock/98b/200_200_1/tamoqf814njd9lvit2rhf3psi5mxoojq.webp",
+      "price": 68900,
+      "price_discount": 63900,
+      "quantity": 7,
+      "reviews": 0,
+      "favorite": true,
+      "id": 431193
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин ВПО-111, калибр 7,62х54, L-600",
+      "preview_picture": "/upload/resize_cache/iblock/3ea/200_200_1/3ea88d6c93f61df216329021a5c784d5.JPG",
+      "price": 94990,
+      "price_discount": 89990,
+      "quantity": 0,
+      "reviews": 5,
+      "favorite": true,
+      "id": 48848
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин ВПО-155-18, калибр 223 Rem, L-350",
+      "preview_picture": "/upload/resize_cache/iblock/ef4/200_200_1/urlurm1sf4l8enebhuwzydkhdtzsbpze.webp",
+      "price": 72900,
+      "price_discount": 67900,
+      "quantity": 0,
+      "reviews": 0,
+      "favorite": true,
+      "id": 522340
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин ВПО-158Н-06, калибр 5,45*39, L-345",
+      "preview_picture": "/upload/resize_cache/iblock/fef/200_200_1/gcm1i5g6h7p2ssfngx3s88tedtge8weo.webp",
+      "price": 79990,
+      "price_discount": 74990,
+      "quantity": 0,
+      "reviews": 0,
+      "favorite": true,
+      "id": 522259
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин ВПО-165-01 ПК, калибр 5,56*45, L-345",
+      "preview_picture": "/upload/resize_cache/iblock/bc1/200_200_1/ommd1x4ogevdfgkjk0xh0wgjw1d637zg.webp",
+      "price": 72900,
+      "price_discount": 67900,
+      "quantity": 21,
+      "reviews": 0,
+      "favorite": true,
+      "id": 522338
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин ВПО-165-01, калибр 5,56*45, L-345",
+      "preview_picture": "/upload/resize_cache/iblock/a11/200_200_1/ikwd1zax509n6rbifqklun6xglq2wf6m.webp",
+      "price": 72900,
+      "price_discount": 67900,
+      "quantity": 7,
+      "reviews": 0,
+      "favorite": true,
+      "id": 522359
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин \"JACK\" калибр 9х19, L=370",
+      "preview_picture": "/upload/resize_cache/iblock/9d1/200_200_1/pqrztpsxgpz23v21f59wdg38dpj93wuy.webp",
+      "price": 62495,
+      "price_discount": 61990,
+      "quantity": 0,
+      "reviews": 0,
+      "favorite": true,
+      "id": 522267
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин JACK-02 калибр 9*19 с бок.планкой",
+      "preview_picture": "/upload/resize_cache/iblock/bfb/200_200_1/2psyi8dbt04m7xd3jtfh37xdok6p38m5.webp",
+      "price": 59990,
+      "price_discount": 57990,
+      "quantity": 0,
+      "reviews": 0,
+      "favorite": true,
+      "id": 444284
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин МА-136-03 калибр 7,62х39 прикл. скл.рам., бок. Планка пластик L-330",
+      "preview_picture": "/upload/no_photo.png",
+      "price": 70490,
+      "price_discount": 69990,
+      "quantity": 0,
+      "reviews": 0,
+      "favorite": true,
+      "id": 522342
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин МА-136-05 калибр 7,62х39 прикл. скл.рам., бок. Планка L-415",
+      "preview_picture": "/upload/resize_cache/iblock/6a3/200_200_1/7fj8hl292j2kc3h5chw4zy13wi4pk13p.webp",
+      "price": 66990,
+      "price_discount": 65990,
+      "quantity": 0,
+      "reviews": 0,
+      "favorite": true,
+      "id": 522322
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин Remington 750 Synthetic калибр 243 Win, ствол 22\"",
+      "preview_picture": "/upload/resize_cache/iblock/25c/200_200_1/92vhqdnfriol5w2bsp4z9wg3h7zbs8b9.webp",
+      "price": 146900,
+      "price_discount": 141900,
+      "quantity": 1,
+      "reviews": 0,
+      "favorite": true,
+      "id": 14843
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин Blaser R8 Prof калибр 308",
+      "preview_picture": "/upload/resize_cache/iblock/e47/200_200_1/oilkkh9xiuhhnlfdpb9opm472lqsvxnk.webp",
+      "price": 1273900,
+      "price_discount": 1268900,
+      "quantity": 0,
+      "reviews": 0,
+      "favorite": true,
+      "id": 451005
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин Browning A-Bolt II калибр 222Rem CompoStalker Целик",
+      "preview_picture": "/upload/resize_cache/iblock/fba/200_200_1/hpibnwyiiw6hijgbszklris9oqjmbi9k.jpg",
+      "price": 146900,
+      "price_discount": 141900,
+      "quantity": 0,
+      "reviews": 0,
+      "favorite": true,
+      "id": 277597
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин Heckler & Koch SLB-2000 калибр 300 WinMag",
+      "preview_picture": "/upload/resize_cache/iblock/254/200_200_1/t09eslt4da7ycuhj1tywdos64xkcbrxd.webp",
+      "price": 108900,
+      "price_discount": 103900,
+      "quantity": 1,
+      "reviews": 5,
+      "favorite": true,
+      "id": 277295
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "КАРАБИН Merkel RX Helix Black калибр 243 Win",
+      "preview_picture": "/upload/resize_cache/iblock/baf/200_200_1/yilr99krq6mkuezryqvp4u0pq3tps5s3.jpeg",
+      "price": 614900,
+      "price_discount": 603900,
+      "quantity": 0,
+      "reviews": 0,
+      "favorite": true,
+      "id": 436838
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин SDI GSG-47R 22 LR",
+      "preview_picture": "/upload/resize_cache/iblock/b39/200_200_1/31t1y5gmhp9upd9ds3wno860uriylkoq.webp",
+      "price": 54995,
+      "price_discount": 51990,
+      "quantity": 1,
+      "reviews": 0,
+      "favorite": true,
+      "id": 46679
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин Chapuis ROLS Classic, калибр 30-06 Sprg",
+      "preview_picture": "/upload/resize_cache/iblock/170/200_200_1/6fon2l999rceo3kx7wm865ebzu8cid8l.jpeg",
+      "price": 569900,
+      "price_discount": 374900,
+      "quantity": 0,
+      "reviews": 0,
+      "favorite": true,
+      "id": 450102
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин Chapuis Rols Soft Touch калибр 308 Win ",
+      "preview_picture": "/upload/resize_cache/iblock/791/200_200_1/o6i27zshcptzrc9onb6n6py0980uchp0.jpg",
+      "price": 499900,
+      "price_discount": 334900,
+      "quantity": 0,
+      "reviews": 0,
+      "favorite": true,
+      "id": 450127
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин Walther Colt M16, калибр 22Lr (190033) (Semiauto)",
+      "preview_picture": "/upload/resize_cache/iblock/751/200_200_1/q943w6nmu1px93nu1bstarqz6j1xb1vl.webp",
+      "price": 162990,
+      "price_discount": 116990,
+      "quantity": 0,
+      "reviews": 0,
+      "favorite": true,
+      "id": 433612
+    },
+    {
+      "available": true,
+      "labels": {
+        "discount": "Есть скидка"
+      },
+      "name": "Карабин Savage 64 TR-SR, калибр 22Lr, 16.5'' (Semiauto)",
+      "preview_picture": "/upload/resize_cache/iblock/ea6/200_200_1/9dsw3kernvb9wqpxl9utjulv9atn0wv9.webp",
+      "price": 155900,
+      "price_discount": 150900,
+      "quantity": 5,
+      "reviews": 0,
+      "favorite": true,
+      "id": 433732
+    }
+  ],
+  "perPage": {
+    "page": 36
+  },
+  "basket": {
     "items": [
-      {
-        "available": true,
-        "id": 608204,
-        "labels": {
-          "discount": "Есть скидка",
-          "new": "Новинки"
-        },
-        "name": "Карабин охотничий Adler AD-500, калибр 308Win., L=510",
-        "preview_picture": "https://ohotaktiv.ru/upload/resize_cache/iblock/e13/200_200_1/e02rm12cwkqqeubx6bu9becysk0kewwd.webp",
-        "price": 120990,
-        "price_discount": 119990,
-        "quantity": 39,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 433576,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин Walther Colt M16, калибр 22Lr (190032) (Semiauto)",
-        "preview_picture": "https://ohotaktiv.ru/upload/resize_cache/iblock/188/200_200_1/xxyqz2jgqbnx6gsizpm83mfbj3tnf423.webp",
-        "price": 198900,
-        "price_discount": 193900,
-        "quantity": 4,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 432229,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин ВПО 192 Горностай, калибр 7,62*39, L=420",
-        "preview_picture": "https://ohotaktiv.ru/upload/resize_cache/iblock/188/200_200_1/xxyqz2jgqbnx6gsizpm83mfbj3tnf423.webp",
-        "price": 94990,
-        "price_discount": 89990,
-        "quantity": 0,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 14912,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин Вепрь Хантер калибр 7,62х63 (.30-06) L=550 б/о",
-        "preview_picture": "/upload/resize_cache/iblock/666/200_200_1/o9c882o7ec446gcrcz6ev80za2f8vm5c.webp",
-        "price": 77490,
-        "price_discount": 72490,
-        "quantity": 0,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 536844,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин охотничий модели МЕ16 калибра .22LR орех ",
-        "preview_picture": "/upload/resize_cache/iblock/822/200_200_1/dr525cuxb3dkn3zqir5i99ru7ht32z3s.webp",
-        "price": 92990,
-        "price_discount": 87990,
-        "quantity": 0,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 46981,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Ружье Hatsan ESCORT BREAK-UP, калибр 12x76, полуавтомат газоотводный, camo-осенний лес, пластик, ствол 30\" (760)",
-        "price": 67990,
-        "price_discount": 63990,
-        "quantity": 0,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 25151,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Ружье Hatsan ESCORT DYNOVA, калибр 12x76, п/а-инерц, дерево, ствол 28\" (710)",
-        "preview_picture": "/upload/resize_cache/iblock/835/200_200_1/60b61m3stpnnr7kwx1c70jss9kin1nwg.webp",
-        "price": 31995,
-        "price_discount": 29990,
-        "quantity": 54,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 9601,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Ружье МР-155 12/76 орех 3д/н, полуавтомат газоотводный, цв. муш. сп. кр. никель L=750",
-        "preview_picture": "/upload/resize_cache/iblock/971/200_200_1/u87ss8fwo40rudw6qyrul4bzjbfgluns.webp",
-        "price": 46990,
-        "price_discount": 45990,
-        "quantity": 0,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 269908,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Ружье LEGEND Syn. Black reciever, 12/76, 760 мм",
-        "preview_picture": "/upload/resize_cache/iblock/a5a/200_200_1/67xtmtuma6l41xs1j3skl4qdqfemiebp.webp",
-        "price": 36990,
-        "price_discount": 34990,
-        "quantity": 74,
-        "reviews": 4
-      },
-      {
-        "available": true,
-        "id": 23563,
-        "labels": {
-          "discount": "Есть скидка",
-          "first_weapon": "Подходит для первого оружия"
-        },
-        "name": "Ружье Sabatti AIRONE, калибр 12х76, экстрактор,один спусковой крючок, ствол 30\" (760), стволы ***/*, антабки",
-        "preview_picture": "/upload/resize_cache/iblock/250/200_200_1/i4qxacvcbw0rtcx6wtmtjcf6top147ly.webp",
-        "price": 134905,
-        "price_discount": 129900,
-        "quantity": 1,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 35930,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Ружье Сайга 12 исп. 340, пластик, телескопический приклад",
-        "preview_picture": "/upload/resize_cache/iblock/656/200_200_1/qf2j9dfy4rv7js2n1l53qkbfbo4le953.webp",
-        "price": 104990,
-        "price_discount": 103990,
-        "quantity": 0,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 9513,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Ружье Remington VERSA MAX CAMO калибр 12*89, длина ствола 26\"",
-        "preview_picture": "/upload/resize_cache/iblock/bec/200_200_1/ndr1qj1wlvkm1aw8b27g9hrjsx4fbrc2.webp",
-        "price": 188905,
-        "price_discount": 183900,
-        "quantity": 1,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 109180,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Ружьё МР-18МН калибр 7,62х51 (308 Win), береза L=600",
-        "preview_picture": "/upload/iblock/ffa/ffac964a614543ee354bc8b61b1d41f2.jpg",
-        "price": 24990,
-        "price_discount": 23990,
-        "quantity": 0,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 109216,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Ружьё МР-18МН калибр 7,62х51, орех",
-        "preview_picture": "/upload/resize_cache/iblock/c46/200_200_1/c46955c6e06717921b54a1a8e41257dd.jpg",
-        "price": 25790,
-        "price_discount": 24790,
-        "quantity": 0,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 34096,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин Вепрь-22 калибр 22LR, L-420",
-        "preview_picture": "/upload/resize_cache/iblock/9bd/200_200_1/9bd02b84b02c3126e97e6373a6f1c727.jpeg",
-        "price": 34990,
-        "price_discount": 29990,
-        "quantity": 0,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 431370,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин ВПО 183-01 Горностай, калибр 9*39, L=520мм",
-        "preview_picture": "/upload/resize_cache/iblock/c50/200_200_1/p99xqlxf4c7afgdrl9gncknn9psgr8mf.webp",
-        "price": 68900,
-        "price_discount": 63900,
-        "quantity": 15,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 431193,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин ВПО 183-02 Горностай, калибр 9*39, L=600мм",
-        "preview_picture": "/upload/resize_cache/iblock/98b/200_200_1/tamoqf814njd9lvit2rhf3psi5mxoojq.webp",
-        "price": 68900,
-        "price_discount": 63900,
-        "quantity": 7,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 48848,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин ВПО-111, калибр 7,62х54, L-600",
-        "preview_picture": "/upload/resize_cache/iblock/3ea/200_200_1/3ea88d6c93f61df216329021a5c784d5.JPG",
-        "price": 94990,
-        "price_discount": 89990,
-        "quantity": 0,
-        "reviews": 5
-      },
-      {
-        "available": true,
-        "id": 522340,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин ВПО-155-18, калибр 223 Rem, L-350",
-        "preview_picture": "/upload/resize_cache/iblock/ef4/200_200_1/urlurm1sf4l8enebhuwzydkhdtzsbpze.webp",
-        "price": 72900,
-        "price_discount": 67900,
-        "quantity": 0,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 522259,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин ВПО-158Н-06, калибр 5,45*39, L-345",
-        "preview_picture": "/upload/resize_cache/iblock/fef/200_200_1/gcm1i5g6h7p2ssfngx3s88tedtge8weo.webp",
-        "price": 79990,
-        "price_discount": 74990,
-        "quantity": 0,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 522338,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин ВПО-165-01 ПК, калибр 5,56*45, L-345",
-        "preview_picture": "/upload/resize_cache/iblock/bc1/200_200_1/ommd1x4ogevdfgkjk0xh0wgjw1d637zg.webp",
-        "price": 72900,
-        "price_discount": 67900,
-        "quantity": 21,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 522359,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин ВПО-165-01, калибр 5,56*45, L-345",
-        "preview_picture": "/upload/resize_cache/iblock/a11/200_200_1/ikwd1zax509n6rbifqklun6xglq2wf6m.webp",
-        "price": 72900,
-        "price_discount": 67900,
-        "quantity": 7,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 522267,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин \"JACK\" калибр 9х19, L=370",
-        "preview_picture": "/upload/resize_cache/iblock/9d1/200_200_1/pqrztpsxgpz23v21f59wdg38dpj93wuy.webp",
-        "price": 62495,
-        "price_discount": 61990,
-        "quantity": 0,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 444284,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин JACK-02 калибр 9*19 с бок.планкой",
-        "preview_picture": "/upload/resize_cache/iblock/bfb/200_200_1/2psyi8dbt04m7xd3jtfh37xdok6p38m5.webp",
-        "price": 59990,
-        "price_discount": 57990,
-        "quantity": 0,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 522342,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин МА-136-03 калибр 7,62х39 прикл. скл.рам., бок. Планка пластик L-330",
-        "preview_picture": "/upload/no_photo.png",
-        "price": 70490,
-        "price_discount": 69990,
-        "quantity": 0,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 522322,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин МА-136-05 калибр 7,62х39 прикл. скл.рам., бок. Планка L-415",
-        "preview_picture": "/upload/resize_cache/iblock/6a3/200_200_1/7fj8hl292j2kc3h5chw4zy13wi4pk13p.webp",
-        "price": 66990,
-        "price_discount": 65990,
-        "quantity": 0,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 14843,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин Remington 750 Synthetic калибр 243 Win, ствол 22\"",
-        "preview_picture": "/upload/resize_cache/iblock/25c/200_200_1/92vhqdnfriol5w2bsp4z9wg3h7zbs8b9.webp",
-        "price": 146900,
-        "price_discount": 141900,
-        "quantity": 1,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 451005,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин Blaser R8 Prof калибр 308",
-        "preview_picture": "/upload/resize_cache/iblock/e47/200_200_1/oilkkh9xiuhhnlfdpb9opm472lqsvxnk.webp",
-        "price": 1273900,
-        "price_discount": 1268900,
-        "quantity": 0,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 277597,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин Browning A-Bolt II калибр 222Rem CompoStalker Целик",
-        "preview_picture": "/upload/resize_cache/iblock/fba/200_200_1/hpibnwyiiw6hijgbszklris9oqjmbi9k.jpg",
-        "price": 146900,
-        "price_discount": 141900,
-        "quantity": 0,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 277295,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин Heckler & Koch SLB-2000 калибр 300 WinMag",
-        "preview_picture": "/upload/resize_cache/iblock/254/200_200_1/t09eslt4da7ycuhj1tywdos64xkcbrxd.webp",
-        "price": 108900,
-        "price_discount": 103900,
-        "quantity": 1,
-        "reviews": 5
-      },
-      {
-        "available": true,
-        "id": 436838,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "КАРАБИН Merkel RX Helix Black калибр 243 Win",
-        "preview_picture": "/upload/resize_cache/iblock/baf/200_200_1/yilr99krq6mkuezryqvp4u0pq3tps5s3.jpeg",
-        "price": 614900,
-        "price_discount": 603900,
-        "quantity": 0,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "cml2_traits": {
-          "value": "00020701"
-        },
-        "id": 46679,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин SDI GSG-47R 22 LR",
-        "preview_picture": "/upload/resize_cache/iblock/b39/200_200_1/31t1y5gmhp9upd9ds3wno860uriylkoq.webp",
-        "price": 54995,
-        "price_discount": 51990,
-        "quantity": 1,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 450102,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин Chapuis ROLS Classic, калибр 30-06 Sprg",
-        "preview_picture": "/upload/resize_cache/iblock/170/200_200_1/6fon2l999rceo3kx7wm865ebzu8cid8l.jpeg",
-        "price": 569900,
-        "price_discount": 374900,
-        "quantity": 0,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "id": 450127,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин Chapuis Rols Soft Touch калибр 308 Win ",
-        "preview_picture": "/upload/resize_cache/iblock/791/200_200_1/o6i27zshcptzrc9onb6n6py0980uchp0.jpg",
-        "price": 499900,
-        "price_discount": 334900,
-        "quantity": 0,
-        "reviews": 0
-      },
-      {
-        "available": true,
-        "cml2_traits": {
-          "value": "00219000"
-        },
-        "id": 433612,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин Walther Colt M16, калибр 22Lr (190033) (Semiauto)",
-        "preview_picture": "/upload/resize_cache/iblock/751/200_200_1/q943w6nmu1px93nu1bstarqz6j1xb1vl.webp",
-        "price": 162990,
-        "price_discount": 116990,
-        "quantity": 0,
-        "reviews": 0
-      },
       {
         "available": true,
         "cml2_traits": {
@@ -481,48 +530,26 @@
         "quantity": 5,
         "reviews": 0
       }
-    ],
-    "perPage": {
-      "page": 36
-    },
-    "basket": {
-      "items": [
-        {
-          "available": true,
-          "cml2_traits": {
-            "value": "00219004"
-          },
-          "id": 433732,
-          "labels": {
-            "discount": "Есть скидка"
-          },
-          "name": "Карабин Savage 64 TR-SR, калибр 22Lr, 16.5'' (Semiauto)",
-          "preview_picture": "/upload/resize_cache/iblock/ea6/200_200_1/9dsw3kernvb9wqpxl9utjulv9atn0wv9.webp",
-          "price": 155900,
-          "price_discount": 150900,
-          "quantity": 5,
-          "reviews": 0
-        }
-      ]
-    },
-    "favorite": {
-      "items": [
-        {
-          "available": true,
-          "cml2_traits": {
-            "value": "00219004"
-          },
-          "id": 433732,
-          "labels": {
-            "discount": "Есть скидка"
-          },
-          "name": "Карабин Savage 64 TR-SR, калибр 22Lr, 16.5'' (Semiauto)",
-          "preview_picture": "/upload/resize_cache/iblock/ea6/200_200_1/9dsw3kernvb9wqpxl9utjulv9atn0wv9.webp",
-          "price": 155900,
-          "price_discount": 150900,
-          "quantity": 5,
-          "reviews": 0
-        }
-      ]
-    }
+    ]
+  },
+  "favorite": {
+    "items": [
+      {
+        "available": true,
+        "cml2_traits": {
+          "value": "00219004"
+        },
+        "id": 433732,
+        "labels": {
+          "discount": "Есть скидка"
+        },
+        "name": "Карабин Savage 64 TR-SR, калибр 22Lr, 16.5'' (Semiauto)",
+        "preview_picture": "/upload/resize_cache/iblock/ea6/200_200_1/9dsw3kernvb9wqpxl9utjulv9atn0wv9.webp",
+        "price": 155900,
+        "price_discount": 150900,
+        "quantity": 5,
+        "reviews": 0
+      }
+    ]
   }
+}

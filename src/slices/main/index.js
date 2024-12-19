@@ -10,14 +10,23 @@ const initialState = {
     isLoading: true,
     error: "",
   };
+  export let updateObjectInArray = (items, itemId, objPropName, newObjProps) => {
+    return items.map((value) => {
+      if (value[objPropName] === itemId) {
+        return { ...value, ...newObjProps };
+      }
+      return value;
+    });
+  };
 
 export const getMenu = createAsyncThunk(
     'getMenu',
     async (data, { rejectWithValue }) => {
         try {
             const response = await instance
-            .get(`items`)
+            .get(`items?_limit=${6}`)
             .then((response) => response);
+            console.log(response);
             return response.data;
 
         } catch (e) {
@@ -26,6 +35,19 @@ export const getMenu = createAsyncThunk(
     }
 )
 
+export const editMenu = createAsyncThunk(
+    'editMenu',
+    async ({id, ...data}, { rejectWithValue, dispatch }) => {
+        try {
+            console.log(id, data.available);
+            const response = await instance
+            .put(`items/${id}`, {...data, favorite: data.favorite})
+            dispatch(getMenu())
+        } catch (e) {
+            return rejectWithValue(e)
+        }
+    }
+)
 export const menuSlice = createSlice({
     name: "menu",
     initialState,
@@ -34,16 +56,19 @@ export const menuSlice = createSlice({
     extraReducers: (builder) => {
         builder
             .addCase(getMenu.pending, (state) => {
-                state.isLoading = true
+                if (state.items.length === 0) {
+                    state.isLoading = true
+                }else {
+                    state.isLoading = false
+                }
             })
             .addCase(getMenu.fulfilled, (state, {payload}) => {
                 state.isLoading = false 
                 state.items = payload;
-                console.log(state.items);
             })
             .addCase(getMenu.rejected, (state) => { 
                 state.isLoading = false
-            })    
+            })
     },
 });
 const { reducer } = menuSlice;

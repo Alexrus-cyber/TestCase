@@ -7,6 +7,8 @@ import { useEffect, useMemo } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { getMenu } from './slices/main';
+import Footer from './Components/Footer/Footer';
+import Favorite from './Pages/Favorites/Favorite';
 
 function App() {
   const dispatch = useDispatch();
@@ -21,7 +23,9 @@ function App() {
       <Header/>
       <Routes>
         <Route path="/" element={<Main />} />
+        <Route path="/favorite" element={<Favorite />} />
       </Routes>
+      <Footer/>
     </div>
     )
   })

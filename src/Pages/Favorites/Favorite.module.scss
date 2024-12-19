@@ -1,0 +1,28 @@
+@use "../../functions.scss" as fn;
+.favorite{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    .container {
+        @extend .containerAll;
+        flex-direction: column;
+        margin: 10px;
+        .title {
+            text-wrap: wrap;
+            text-align: center;
+            font-size: fn.calcRem(35px);
+            margin-bottom: fn.calcRem(40px);
+        }
+        .subContainer {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-items: center;
+            justify-content: center;
+            row-gap: 30px;
+            column-gap: 30px;
+        }
+        
+    }
+}

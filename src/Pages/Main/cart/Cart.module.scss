@@ -34,5 +34,78 @@
             max-width: 150px;
             max-height: 150px;
         }
+        .buttons {
+            display: flex;
+            width: 80%;
+            justify-content: space-between; 
+            align-items: center;
+            margin: 10px;
+            .inactive:disabled{
+                border: 1px solid gray;
+                background-color: transparent;
+                border-radius: 10px;
+                padding: 10px;
+                color: gray;
+                transition-duration: 0.5s;
+            }
+            .active {
+              display: flex;
+              font-size: fn.calcRem(16px);
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              margin: 0;
+              border: 1px solid gray;
+              background-color: transparent;
+              border-radius: 10px;
+              padding: 10px;
+              color: gray;
+              transition-duration: 0.5s;
+            }
+            .button {
+                border: 1px solid orange;
+                background-color: transparent;
+                border-radius: 10px;
+                padding: 10px;
+                color: orange;
+                transition-duration: 0.5s;
+                cursor: pointer;
+              }
+            .button:hover {
+                  background-color: orange;
+                  color: white;
+            }
+                .icon {
+                    border: 1px solid orange;
+                    background-color: transparent;
+                    border-radius: 10px;
+                    padding: 10px;
+                    color: orange;
+                    transition-duration: 0.5s;
+                    cursor: pointer;
+                    height: 37px;
+                    width: 37px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .icon:hover {
+                    background-color: orange;
+                    color: white;
+                }
+                .inactiveIcon:disabled{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid gray;
+                    background-color: transparent;
+                    border-radius: 10px;
+                    padding: 10px;
+                    height: 37px;
+                    width: 37px;
+                    color: gray;
+                    transition-duration: 0.5s;
+                }
+        }
     }
 }

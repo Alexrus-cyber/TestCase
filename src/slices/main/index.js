@@ -10,23 +10,16 @@ const initialState = {
     isLoading: true,
     error: "",
     currentPage: 1,
-    itemsPerPage: 10,
-  };
-  export let updateObjectInArray = (items, itemId, objPropName, newObjProps) => {
-    return items.map((value) => {
-      if (value[objPropName] === itemId) {
-        return { ...value, ...newObjProps };
-      }
-      return value;
-    });
+    itemsPerPage: 6,
+    totalPages: 0
   };
 
 export const getMenu = createAsyncThunk(
     'getMenu',
-    async (data, { rejectWithValue }) => {
+    async ({itemsPerPage, currentPage}, { rejectWithValue }) => {
         try {
             const response = await instance
-            .get(`items?_limit=${6}`)
+            .get(`items?_limit=${itemsPerPage}&_page=${currentPage}`)
             .then((response) => response);
             return response.data;
 
@@ -36,13 +29,29 @@ export const getMenu = createAsyncThunk(
     }
 )
 
+export const getTotalPage = createAsyncThunk(
+    'getTotalPage',
+    async (data, { rejectWithValue }) => {
+        try {
+            const response = await instance
+            .get(`countItems`)
+            .then((response) => response);
+            return response.data;
+
+        } catch (e) {
+            return rejectWithValue(e)
+        }
+    }
+)
+
+
 export const editFavorite = createAsyncThunk(
     'editFavorite',
     async ({id, ...data}, { rejectWithValue, dispatch }) => {
         try {
             await instance
             .put(`items/${id}`, {...data, favorite: data.favorite})
-            dispatch(getMenu())
+            dispatch(getMenu({itemsPerPage: data.itemsPerPage, currentPage: data.currentPage}))
         } catch (e) {
             return rejectWithValue(e)
         }
@@ -55,7 +64,7 @@ export const editBasket = createAsyncThunk(
         try {
             await instance
             .put(`items/${id}`, {...data, basket: data.basket})
-            dispatch(getMenu())
+            dispatch(getMenu({itemsPerPage: data.itemsPerPage, currentPage: data.currentPage}))
         } catch (e) {
             return rejectWithValue(e)
         }
@@ -66,6 +75,9 @@ export const menuSlice = createSlice({
     name: "menu",
     initialState,
     reducers: {
+        setCurrentPage: (state, action) => {
+            state.currentPage = action.payload;
+          },
     },
     extraReducers: (builder) => {
         builder
@@ -83,11 +95,17 @@ export const menuSlice = createSlice({
             .addCase(getMenu.rejected, (state) => { 
                 state.isLoading = false
             })
+            .addCase(getTotalPage.fulfilled, (state, {payload}) => {
+                state.isLoading = false 
+                state.totalPages = payload.count;
+            })
     },
 });
 const { reducer } = menuSlice;
 
 const stateSelector = (state) => state?.menu;
+
+export const setCurrentPage = menuSlice.actions.setCurrentPage;
 
 export const listMenuSelector = createSelector(
     stateSelector,

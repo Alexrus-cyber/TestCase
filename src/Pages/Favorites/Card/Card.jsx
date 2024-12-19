@@ -22,9 +22,9 @@ const Card = ({favorite,id,basket, ...props}) => {
                 <div className={styles.count}>
                     <p>Количество товара: {props.quantity}</p>
                     <img className={styles.img} src={props.preview_picture} alt="cart"></img>
-                    <button onClick={() => 
+                    <button disabled={basket === true} className={basket === true ? styles.inactive : styles.button} onClick={() => 
                     EditBasket(favorite, id, t, {...props})}>
-                        В корзину
+                        {basket === true ? "В корзине" : "В корзину"}
                     </button> 
                 </div>
                 <div className={styles.rating}>

@@ -1,0 +1,30 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+    .button{
+        border: 1px solid orange;
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 10px;
+        color: orange;
+        transition-duration: 0.5s;
+        cursor: pointer;
+    }
+    .button:hover {
+        background-color: orange;
+        color: white;
+    }
+    .inactive:disabled{
+        border: 1px solid gray;
+        background-color: transparent;
+        border-radius: 10px;
+        padding: 10px;
+        color: gray;
+        transition-duration: 0.5s;
+    }
+}
+
+

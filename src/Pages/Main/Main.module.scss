@@ -3,8 +3,11 @@
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    margin: fn.calcRem(20px);
     .container {
         @extend .containerAll;
+        flex-direction: column;
+        row-gap: fn.calcRem(20px);
         .subContainer {
             display: flex;
             flex-wrap: wrap;

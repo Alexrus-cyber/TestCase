@@ -1,14 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from "./Components/Header/Header";
 import { Route, Routes } from 'react-router-dom';
 import Main from "./Pages/Main/Main";
 import { useEffect, useMemo } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { getMenu } from './slices/main';
 import Footer from './Components/Footer/Footer';
 import Favorite from './Pages/Favorites/Favorite';
+import Basket from './Pages/Basket/Basket';
 
 function App() {
   const dispatch = useDispatch();
@@ -24,6 +24,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/favorite" element={<Favorite />} />
+        <Route path="/basket" element={<Basket />} />
       </Routes>
       <Footer/>
     </div>

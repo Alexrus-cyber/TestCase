@@ -5,6 +5,7 @@
   letter-spacing: 0;
   background-color: #282c34;
   color: wheat;
+  position: relative;
 }
 
 .App-logo {

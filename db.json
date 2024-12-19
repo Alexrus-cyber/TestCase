@@ -5,6 +5,7 @@
   "items": [
     {
       "favorite": false,
+      "basket": false,
       "labels": {
         "discount": "Есть скидка",
         "new": "Новинки"
@@ -19,7 +20,8 @@
       "id": 608204
     },
     {
-      "favorite": false,
+      "favorite": true,
+      "basket": true,
       "labels": {
         "discount": "Есть скидка"
       },
@@ -88,6 +90,7 @@
       "id": 46981
     },
     {
+      "favorite": false,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -98,7 +101,6 @@
       "price_discount": 29990,
       "quantity": 54,
       "reviews": 0,
-      "favorite": true,
       "id": 25151
     },
     {

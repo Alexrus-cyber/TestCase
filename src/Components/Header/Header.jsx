@@ -11,14 +11,14 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <div className={styles.container}>
-               <NavLink to={"/"} className={styles.logo}><h1>Logo</h1></NavLink> 
+               <NavLink to={"/"} className={styles.logo}><h1>Logo{items.filter((item) => item.favorite === false).length}</h1></NavLink> 
                 <div className={styles.menu}>
-                    <NavLink to={"/"} className={styles.img}>
-                        <img src={basket} alt="basket"></img>
-                        <div className={styles.counter}>{items.filter((item) => item.favorite === false).length}</div>
+                    <NavLink to={"/basket"} className={styles.img}>
+                        <img  src={basket} alt="basket"></img>
+                        <div className={styles.counter}>{items.filter((item) => item.basket === true).length}</div>
                     </NavLink>
                     <NavLink to={"/favorite"} className={styles.img}>
-                        <img src={favorite} alt="basket"></img>
+                        <img src={favorite} alt="favorite"></img>
                         <div className={styles.counter}>{items.filter((item) => item.favorite === true).length}</div>
                     </NavLink>
                 </div>

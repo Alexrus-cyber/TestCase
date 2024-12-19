@@ -9,6 +9,8 @@ const initialState = {
     items: [],
     isLoading: true,
     error: "",
+    currentPage: 1,
+    itemsPerPage: 10,
   };
   export let updateObjectInArray = (items, itemId, objPropName, newObjProps) => {
     return items.map((value) => {
@@ -26,7 +28,6 @@ export const getMenu = createAsyncThunk(
             const response = await instance
             .get(`items?_limit=${6}`)
             .then((response) => response);
-            console.log(response);
             return response.data;
 
         } catch (e) {
@@ -35,12 +36,11 @@ export const getMenu = createAsyncThunk(
     }
 )
 
-export const editMenu = createAsyncThunk(
-    'editMenu',
+export const editFavorite = createAsyncThunk(
+    'editFavorite',
     async ({id, ...data}, { rejectWithValue, dispatch }) => {
         try {
-            console.log(id, data.available);
-            const response = await instance
+            await instance
             .put(`items/${id}`, {...data, favorite: data.favorite})
             dispatch(getMenu())
         } catch (e) {
@@ -48,6 +48,20 @@ export const editMenu = createAsyncThunk(
         }
     }
 )
+
+export const editBasket = createAsyncThunk(
+    'editFavorite',
+    async ({id, ...data}, { rejectWithValue, dispatch }) => {
+        try {
+            await instance
+            .put(`items/${id}`, {...data, basket: data.basket})
+            dispatch(getMenu())
+        } catch (e) {
+            return rejectWithValue(e)
+        }
+    }
+)
+
 export const menuSlice = createSlice({
     name: "menu",
     initialState,

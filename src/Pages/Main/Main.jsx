@@ -9,7 +9,7 @@ const Main = () => {
     const { isLoading } = useSelector((state) => state.menu);
     const dispatch = useDispatch();
     useEffect(() => {
-        dispatch(getMenu())
+        dispatch(getMenu());
     }, [dispatch])
     if (isLoading) {
         return <h1>Loading...</h1>;

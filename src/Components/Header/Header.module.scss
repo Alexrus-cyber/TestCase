@@ -6,6 +6,11 @@
     justify-content: center;
     max-height: 100px;
     height: 100px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: #282c34;
 }
 .container {
     @extend .containerAll;
@@ -29,6 +34,7 @@
         max-height: 32px;
         position: relative;
         .counter {
+            color: white;
             position: absolute;
             width: fn.calcRem(16px);
             height: fn.calcRem(16px);

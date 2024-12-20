@@ -12,8 +12,6 @@ const initialState = {
     currentPage: 1,
     itemsPerPage: 6,
     totalPages: 0,
-    itemsFavorite: [],
-    itemsBasket: [],
   };
 
 export const getMenu = createAsyncThunk(

@@ -6,7 +6,7 @@
     flex-direction: column;
     color: #919191;
     text-align: left;
-    background: #222223;
+    background: #282c34;
     border-top: 1px solid #919191;
     line-height: 32px;
     font-size: 20px;
@@ -26,22 +26,23 @@
   
   .left {
     padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    
   }
   
   .textLeft {
     max-width: 290px;
     width: 100%;
-    margin-bottom: 60px;
-    margin-top: -50px;
   }
   
   .imgContainer {
     max-width: 195px;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -30px;
+    text-decoration: none;
+    color: wheat;
   }
   
   .center {
@@ -95,6 +96,7 @@
     width: 100%;
     border-radius: 35%;
     transition-duration: 0.5s;
+    text-decoration: none;
   }
   
   .icon:hover {
@@ -131,10 +133,16 @@
     }
   
     .imgContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin: 0;
     }
   
     .icons {
       padding-bottom: 20px;
+    }
+    .footerText {
+      padding-top: 20px;
     }
   }

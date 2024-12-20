@@ -2,7 +2,7 @@ import React, { useCallback } from "react";
 import styles from "./Cart.module.scss";
 import { useDispatch } from "react-redux";
 import { editFavorite, editBasket } from "../../../slices/main";
-import basketPng from "../../../Assets/shopping-bag.png"
+import { ShoppingCart } from "lucide-react";
 
 const Cart = ({favorite,id,basket, ...props}) => {
     const dispatch = useDispatch();
@@ -19,14 +19,14 @@ const Cart = ({favorite,id,basket, ...props}) => {
                 <img className={styles.img} src={props.preview_picture} alt="cart"></img>
                 <h2 className={styles.title}>{props.name.length ? props.name.substring(0, 20) + " ..." : props.name }</h2>
                 <p>{props.labels.discount === "Есть скидка" ? <s>{props.price}₽</s> : <p>{props.price}</p>} {props.labels.discount === "Есть скидка" ? props.price_discount + "₽" : ""}</p>
-                <p>Рейтинг: {props.reviews}</p>
+                <p>Отзывов: {props.reviews}</p>
                 {props.quantity > 0 ? 
                 <div className={styles.buttons}>
                     <button disabled={favorite === true} className={favorite === true ? styles.inactive : styles.button} onClick={() => 
                     EditFavorite(true,id,basket, {...props})}>
                       {favorite === true ? "В избранном" : "В избранное"}
                     </button> 
-                    <button disabled={basket === true} onClick={() => EditBasket(favorite, id, true, {...props})} className={basket === true ? styles.inactiveIcon : styles.icon}><img style={{width: "20px", height: "20px"}} src={basketPng} alt="cart"></img></button>
+                    <button disabled={basket === true} onClick={() => EditBasket(favorite, id, true, {...props})} className={basket === true ? styles.inactiveIcon : styles.icon}>{basket === true ? "В корзине" :  <ShoppingCart color="#fff"/>}</button>
                 </div> 
                 : 
                 <div className={styles.buttons}> <button className={styles.active} disabled>Отсутствует</button></div>

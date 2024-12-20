@@ -11,17 +11,20 @@ const Main = memo(() => {
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(getTotalPage());
-        dispatch(getMenu({itemsPerPage, currentPage}));
+        dispatch(getMenu());
     }, [dispatch])
     if (isLoading) {
         return <h1 style={{ textAlign: "center", minHeight: "100vh"}}>Loading...</h1>;
     }
-
+    console.log(items);
+    const indexOfLastItem = currentPage * itemsPerPage;
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+    const currentItems = items.slice(indexOfFirstItem, indexOfLastItem);
     return (
         <section className={styles.main}>
             <div className={styles.container}>
                 <div className={styles.subContainer}>
-                    {items.map((item) => (
+                    {currentItems.map((item) => (
                         <Cart itemsPerPage={itemsPerPage} currentPage={currentPage} key={item.id} {...item} />
                     ))}
                 </div>

@@ -16,10 +16,10 @@ const initialState = {
 
 export const getMenu = createAsyncThunk(
     'getMenu',
-    async ({itemsPerPage, currentPage}, { rejectWithValue }) => {
+    async (data, { rejectWithValue }) => {
         try {
             const response = await instance
-            .get(`items?_limit=${itemsPerPage}&_page=${currentPage}`)
+            .get(`items`)
             .then((response) => response);
             return response.data;
 
@@ -51,7 +51,7 @@ export const editFavorite = createAsyncThunk(
         try {
             await instance
             .put(`items/${id}`, {...data, favorite: data.favorite})
-            dispatch(getMenu({itemsPerPage: data.itemsPerPage, currentPage: data.currentPage}))
+            dispatch(getMenu())
         } catch (e) {
             return rejectWithValue(e)
         }
@@ -64,7 +64,7 @@ export const editBasket = createAsyncThunk(
         try {
             await instance
             .put(`items/${id}`, {...data, basket: data.basket})
-            dispatch(getMenu({itemsPerPage: data.itemsPerPage, currentPage: data.currentPage}))
+            dispatch(getMenu())
         } catch (e) {
             return rejectWithValue(e)
         }
@@ -77,7 +77,7 @@ export const menuSlice = createSlice({
     reducers: {
         setCurrentPage: (state, action) => {
             state.currentPage = action.payload;
-          },
+        },
     },
     extraReducers: (builder) => {
         builder

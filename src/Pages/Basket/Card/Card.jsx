@@ -17,7 +17,7 @@ const Card = ({favorite,id,basket, ...props}) => {
     , [dispatch]);
 
     return (
-        <div className={styles.cart}>
+        <div className={styles.card}>
             <div className={styles.content}>
                 <div className={styles.count}>
                     <p>Количество товара: {props.quantity}</p>
@@ -29,10 +29,13 @@ const Card = ({favorite,id,basket, ...props}) => {
                 <div className={styles.rating}>
                     <h2 className={styles.title}>{props.name}</h2>
                     <p className={styles.text}>{props.labels.discount === "Есть скидка" ? <s className={styles.text}>{props.price}₽</s> : <p>{props.price}</p>} {props.labels.discount === "Есть скидка" ? props.price_discount + "₽" : ""}</p>
-                    <p className={styles.text}>Рейтинг: {props.reviews}</p>
+                    <p className={styles.text}>Отзывов: {props.reviews}</p>
                 </div>
-                <button onClick={() => 
-                    EditBasket(favorite, id, f, {...props})}>Удалить</button>
+                <div>
+                    <button onClick={() => EditBasket(favorite, id, f, {...props})}>Удалить</button>
+                    <button onClick={() => EditFavorite(favorite, id, f, {...props})}></button>
+                </div>
+                
             </div>   
         </div>
     )

@@ -9,13 +9,13 @@ const Footer = memo(() => {
     {
       id: 2,
       src: vk,
-      link: "https://vk.com/irishpubkostroma",
+      link: "https://vk.com",
       header: "Во вконтакте",
     },
     {
       id: 3,
       src: telega,
-      link: "https://t.me/stohara",
+      link: "https://t.me",
       header: "В телеграмме",
     },
   ];
@@ -28,9 +28,9 @@ const Footer = memo(() => {
             onClick={() => window.scrollTo(0, 0)}
             to={"/"}
           >
-            <h2>Logo</h2>
+            <h1>Logo</h1>
           </NavLink>
-          <p className={styles.textLeft}>☘️Ирландский паб в центре Костромы</p>
+          <p className={styles.textLeft}>Мы в социальных сетях</p>
           <div className={styles.icons}>
             {items.map((el) => (
               <NavLink key={el.id} to={el.link}>
@@ -41,8 +41,8 @@ const Footer = memo(() => {
         </div>
         <div className={styles.center}>
           <div className={styles.info}>
-            <p>Телефон: +7(494)249-96-00</p>
-            <p>Резерв столиков по тел. (4942)499-600</p>
+            <p>Телефон: +7(494)910-99-99</p>
+            <p>Резерв столиков по тел. +7(494)910-99-99</p>
           </div>
           <div className={styles.info}>
             <p>Вс-чт: 12.00-0.00</p>
@@ -59,7 +59,7 @@ const Footer = memo(() => {
         </div>
       </div>
       <p className={styles.footerText}>
-        © 2023 Europa-Park St.O'Hara Irish Pub
+        © 2024
       </p>
     </footer>
   );

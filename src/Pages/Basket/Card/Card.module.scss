@@ -1,6 +1,6 @@
 @use "../../../functions.scss" as fn;
 
-.cart{
+.card{
     display: flex;
     width: 100%;
     height: fn.calcRem(350px);
@@ -12,6 +12,7 @@
     margin: auto;
     .content {
         display: flex;
+        justify-content: space-between;
         padding: 20px;
         position: relative;
         width: 100%;

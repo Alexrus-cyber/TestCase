@@ -40,6 +40,9 @@
     },
     {
       "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "labels": {
         "discount": "Есть скидка"
       },
@@ -54,6 +57,9 @@
     },
     {
       "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "labels": {
         "discount": "Есть скидка"
       },
@@ -68,6 +74,9 @@
     },
     {
       "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "labels": {
         "discount": "Есть скидка"
       },
@@ -82,6 +91,9 @@
     },
     {
       "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "labels": {
         "discount": "Есть скидка"
       },
@@ -96,6 +108,9 @@
     },
     {
       "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 2,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -109,6 +124,10 @@
       "id": 25151
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -119,10 +138,13 @@
       "price_discount": 45990,
       "quantity": 0,
       "reviews": 0,
-      "favorite": true,
       "id": 9601
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -133,10 +155,13 @@
       "price_discount": 34990,
       "quantity": 74,
       "reviews": 4,
-      "favorite": true,
       "id": 269908
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка",
@@ -148,10 +173,13 @@
       "price_discount": 129900,
       "quantity": 1,
       "reviews": 0,
-      "favorite": true,
       "id": 23563
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -162,10 +190,13 @@
       "price_discount": 103990,
       "quantity": 0,
       "reviews": 0,
-      "favorite": true,
       "id": 35930
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -176,10 +207,13 @@
       "price_discount": 183900,
       "quantity": 1,
       "reviews": 0,
-      "favorite": true,
       "id": 9513
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -190,10 +224,13 @@
       "price_discount": 23990,
       "quantity": 0,
       "reviews": 0,
-      "favorite": true,
       "id": 109180
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -204,10 +241,13 @@
       "price_discount": 24790,
       "quantity": 0,
       "reviews": 0,
-      "favorite": true,
       "id": 109216
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -218,10 +258,13 @@
       "price_discount": 29990,
       "quantity": 0,
       "reviews": 0,
-      "favorite": true,
       "id": 34096
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -232,10 +275,13 @@
       "price_discount": 63900,
       "quantity": 15,
       "reviews": 0,
-      "favorite": true,
       "id": 431370
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -246,10 +292,13 @@
       "price_discount": 63900,
       "quantity": 7,
       "reviews": 0,
-      "favorite": true,
       "id": 431193
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -260,10 +309,13 @@
       "price_discount": 89990,
       "quantity": 0,
       "reviews": 5,
-      "favorite": true,
       "id": 48848
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -274,10 +326,13 @@
       "price_discount": 67900,
       "quantity": 0,
       "reviews": 0,
-      "favorite": true,
       "id": 522340
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -288,10 +343,13 @@
       "price_discount": 74990,
       "quantity": 0,
       "reviews": 0,
-      "favorite": true,
       "id": 522259
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -302,10 +360,13 @@
       "price_discount": 67900,
       "quantity": 21,
       "reviews": 0,
-      "favorite": true,
       "id": 522338
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -316,10 +377,13 @@
       "price_discount": 67900,
       "quantity": 7,
       "reviews": 0,
-      "favorite": true,
       "id": 522359
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -330,10 +394,13 @@
       "price_discount": 61990,
       "quantity": 0,
       "reviews": 0,
-      "favorite": true,
       "id": 522267
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -344,10 +411,13 @@
       "price_discount": 57990,
       "quantity": 0,
       "reviews": 0,
-      "favorite": true,
       "id": 444284
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -358,10 +428,13 @@
       "price_discount": 69990,
       "quantity": 0,
       "reviews": 0,
-      "favorite": true,
       "id": 522342
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -372,12 +445,13 @@
       "price_discount": 65990,
       "quantity": 0,
       "reviews": 0,
-      "favorite": true,
       "id": 522322
     },
     {
-      "favorite": true,
-      "basket": true,
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -391,6 +465,10 @@
       "id": 14843
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -401,10 +479,13 @@
       "price_discount": 1268900,
       "quantity": 0,
       "reviews": 0,
-      "favorite": true,
       "id": 451005
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -415,10 +496,13 @@
       "price_discount": 141900,
       "quantity": 0,
       "reviews": 0,
-      "favorite": true,
       "id": 277597
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 5,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -429,10 +513,13 @@
       "price_discount": 103900,
       "quantity": 1,
       "reviews": 5,
-      "favorite": true,
       "id": 277295
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -443,10 +530,13 @@
       "price_discount": 603900,
       "quantity": 0,
       "reviews": 0,
-      "favorite": true,
       "id": 436838
     },
     {
+      "favorite": true,
+      "basket": true,
+      "itemsPerPage": 6,
+      "currentPage": 6,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -457,10 +547,13 @@
       "price_discount": 51990,
       "quantity": 1,
       "reviews": 0,
-      "favorite": true,
       "id": 46679
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -471,10 +564,13 @@
       "price_discount": 374900,
       "quantity": 0,
       "reviews": 0,
-      "favorite": true,
       "id": 450102
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -485,10 +581,13 @@
       "price_discount": 334900,
       "quantity": 0,
       "reviews": 0,
-      "favorite": true,
       "id": 450127
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 1,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -499,10 +598,13 @@
       "price_discount": 116990,
       "quantity": 0,
       "reviews": 0,
-      "favorite": true,
       "id": 433612
     },
     {
+      "favorite": false,
+      "basket": false,
+      "itemsPerPage": 6,
+      "currentPage": 6,
       "available": true,
       "labels": {
         "discount": "Есть скидка"
@@ -513,51 +615,10 @@
       "price_discount": 150900,
       "quantity": 5,
       "reviews": 0,
-      "favorite": true,
       "id": 433732
     }
   ],
   "perPage": {
     "page": 36
-  },
-  "basket": {
-    "items": [
-      {
-        "available": true,
-        "cml2_traits": {
-          "value": "00219004"
-        },
-        "id": 433732,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин Savage 64 TR-SR, калибр 22Lr, 16.5'' (Semiauto)",
-        "preview_picture": "https://ohotaktiv.ru/upload/resize_cache/iblock/9c7/200_200_1/igu87cvln7qmv58k2dtm91tw1hwypfhf.webp",
-        "price": 155900,
-        "price_discount": 150900,
-        "quantity": 5,
-        "reviews": 0
-      }
-    ]
-  },
-  "favorite": {
-    "items": [
-      {
-        "available": true,
-        "cml2_traits": {
-          "value": "00219004"
-        },
-        "id": 433732,
-        "labels": {
-          "discount": "Есть скидка"
-        },
-        "name": "Карабин Savage 64 TR-SR, калибр 22Lr, 16.5'' (Semiauto)",
-        "preview_picture": "/upload/resize_cache/iblock/ea6/200_200_1/9dsw3kernvb9wqpxl9utjulv9atn0wv9.webp",
-        "price": 155900,
-        "price_discount": 150900,
-        "quantity": 5,
-        "reviews": 0
-      }
-    ]
   }
 }

@@ -16,6 +16,7 @@
     @extend .containerAll;
     justify-content: space-between;
     margin: 20px;
+    
     .logo {
         max-width: 100px;
         max-height: 100px;
@@ -28,11 +29,11 @@
     display: flex;
     align-items: center;
     gap: fn.calcRem(20px);
-    
     .img {
         max-width: 32px;
         max-height: 32px;
         position: relative;
+        transition: all 0.5s ease-in-out;
         .counter {
             color: white;
             position: absolute;
@@ -43,6 +44,14 @@
             top: 0;
             right: 0;
             font-size: 10px;
+        }
+        .icon {
+            position: relative;
+            transition-duration: 0.5s;
+        }
+        .icon:hover {
+          fill: #fff;
+          transition-duration: 0.5s;
         }
     }
 }

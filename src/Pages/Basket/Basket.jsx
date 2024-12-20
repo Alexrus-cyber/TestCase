@@ -1,11 +1,11 @@
 import React, { memo, useEffect } from "react";
 import styles from "./Basket.module.scss";
 import { useSelector, useDispatch } from "react-redux";
-import { getMenu, listMenuSelector } from "../../slices/main";
-import Card from "./Card/Card";
+import { getMenu, basketSelector } from "../../slices/main";
+import Card from "../Favorites/Card/Card";
 
 const Basket = memo (() => {
-    const items = useSelector(listMenuSelector);
+    const items = useSelector(basketSelector);
     const { isLoading, itemsPerPage, currentPage } = useSelector((state) => state.menu);
     const dispatch = useDispatch();
     useEffect(() => {
@@ -21,7 +21,7 @@ const Basket = memo (() => {
             <h1 className={styles.title}>Корзина</h1>
                 <div className={styles.subContainer}>
                 {items.filter((item) => item.basket === true).length > 0 ? items.filter((item) => item.basket === true).map((item) => (
-                        <Card itemsPerPage={itemsPerPage} currentPage={currentPage} key={item.id} {...item} />
+                        <Card custom = {false} key={item.id} {...item} />
                     )) : <h1>Вы ничего не добавили в корзину</h1>}
                 </div>
             </div>

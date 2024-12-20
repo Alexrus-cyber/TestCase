@@ -1,31 +1,47 @@
 import React from "react";
 import styles from "./Card.module.scss";
 import { useDispatch } from "react-redux";
-import { editBasket, editFavorite } from "../../../slices/main";
+import { editBasket,editFavorite, deleteFavorite, basketSelector, favoriteSelector, deleteBasket } from "../../../slices/main";
 import { useCallback } from "react";
-import { CircleX, Star } from "lucide-react";
+import { CircleX } from "lucide-react";
+import { useSelector } from "react-redux";
 
-const Card = ({favorite,id,basket, ...props}) => {
-    const f = false;
-    const t = true;
+const Card = ({favorite,id, basket, custom, ...props}) => {
+    const basketItems = useSelector(basketSelector);
+    const favoriteItems = useSelector(favoriteSelector);
+
     const dispatch = useDispatch();
-    const EditFavorite = useCallback((favorite, id, basket, {...props}) => 
-        dispatch(editFavorite({favorite, id,basket, ...props }))
-    , [dispatch]);
 
-    const EditBasket = useCallback((favorite, id, basket, {...props}) => 
-        dispatch(editBasket({favorite, id, basket , ...props}))
+    const EditBasket = useCallback((id) => 
+        dispatch(editBasket({id, ...props}))
+    ,[dispatch]);
+    const DeleteBasket = useCallback((id) => 
+        dispatch(deleteBasket({id, ...props }))
     , [dispatch]);
     
+    const DeleteFavorite = useCallback((id) => 
+        dispatch(deleteFavorite({id, ...props }))
+    , [dispatch]);
+
+    const EditFavorite = useCallback((itemId) =>
+        dispatch(editFavorite({itemId, ...props})) 
+    , [dispatch]);
+
+
     return (
         <div className={styles.card}>
             <div className={styles.content}>
                 <div className={styles.count}>
-                    <img className={styles.img} src={props.preview_picture} alt="cart"></img>
-                    <button disabled={basket === true} className={basket === true ? styles.inactive : styles.button} onClick={() => 
-                    EditBasket(favorite, id, t, {...props})}>
-                        {basket === true ? "В корзине" : "В корзину"}
-                    </button> 
+                    <img className={styles.img} src={"https://ohotaktiv.ru/upload/resize_cache/iblock/188/200_200_1/xxyqz2jgqbnx6gsizpm83mfbj3tnf423.webp"} alt="cart"></img>
+                    {custom ? 
+                    <button disabled={basketItems.map((item) => item.id).includes(id) ? true : false} className={basketItems.map((item) => item.id).includes(id) ? styles.inactive : styles.button} onClick={() => 
+                    EditBasket(id)}>
+                        {basketItems.map((item) => item.id).includes(id) ? "В корзине" : "В корзину"}
+                    </button> : 
+                    <button disabled={favoriteItems.map((item) => item.id).includes(id) ? true : false} className={favoriteItems.map((item) => item.id).includes(id) ? styles.inactive : styles.button} onClick={() => 
+                    EditFavorite(id)}>
+                        {favoriteItems.map((item) => item.id).includes(id) ? "В избранном" : "В избранное"}
+                    </button>}
                 </div>
                 <div className={styles.rating}>
                     <div className={styles.title}>
@@ -37,8 +53,10 @@ const Card = ({favorite,id,basket, ...props}) => {
                         <p className={styles.text}>Отзывов: {props.reviews}</p>
                     </div>
                 </div>
-                <button className={styles.buttonCancel} onClick={() => 
-                    EditFavorite(f, id, basket, {...props})}><CircleX className={styles.buttonCancel}></CircleX></button>
+                {custom ? 
+                <button className={styles.buttonCancel} onClick={() => DeleteFavorite(id)}><CircleX className={styles.buttonCancel}></CircleX></button> 
+                : 
+                <button className={styles.buttonCancel} onClick={() => DeleteBasket(id)}><CircleX className={styles.buttonCancel}></CircleX></button> }
             </div>   
         </div>
     )

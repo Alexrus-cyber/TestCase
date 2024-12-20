@@ -1,32 +1,40 @@
-import React, { useCallback } from "react";
+import React, { use, useCallback } from "react";
 import styles from "./Cart.module.scss";
 import { useDispatch } from "react-redux";
 import { editFavorite, editBasket } from "../../../slices/main";
 import { ShoppingCart } from "lucide-react";
+import { useSelector } from "react-redux";
+import { favoriteSelector, basketSelector } from "../../../slices/main";
 
-const Cart = ({favorite,id,basket, ...props}) => {
+const Cart = ({favorite,id,basket, items, ...props}) => {
+    const favoriteItems = useSelector(favoriteSelector);
+    const basketItems = useSelector(basketSelector);
+
     const dispatch = useDispatch();
-    const EditFavorite = useCallback((favorite,id,basket, {...props}) =>
-        dispatch(editFavorite({favorite,id,basket, ...props}))
+    const EditFavorite = useCallback((itemId) =>{
+        console.log({...props});
+        dispatch(editFavorite({itemId, ...props}))
+    }     
     , [dispatch]);
-    const EditBasket = useCallback((favorite, id, basket, {...props}) => 
-        dispatch(editBasket({favorite, id, basket , ...props}))
+    const EditBasket = useCallback((id) => 
+        dispatch(editBasket({id, ...props}))
     ,[dispatch]);
     return (
         <div className={styles.cart}>
             <div className={styles.content}>
-                <p>Количество: {props.quantity}</p>
-                <img className={styles.img} src={props.preview_picture} alt="cart"></img>
+                <div style={{display: "flex", justifyContent: "space-around", width: "100%"}}>
+                    <p>{props.quantity > 0 ? "В наличии": "Отсутствует"}</p>
+                    <p>Отзывов: {props.reviews}</p>
+                </div>
+                <img className={styles.img} src={"https://ohotaktiv.ru/upload/resize_cache/iblock/188/200_200_1/xxyqz2jgqbnx6gsizpm83mfbj3tnf423.webp"} alt="cart"></img>
                 <h2 className={styles.title}>{props.name.length ? props.name.substring(0, 20) + " ..." : props.name }</h2>
                 <p>{props.labels.discount === "Есть скидка" ? <s>{props.price}₽</s> : <p>{props.price}</p>} {props.labels.discount === "Есть скидка" ? props.price_discount + "₽" : ""}</p>
-                <p>Отзывов: {props.reviews}</p>
                 {props.quantity > 0 ? 
                 <div className={styles.buttons}>
-                    <button disabled={favorite === true} className={favorite === true ? styles.inactive : styles.button} onClick={() => 
-                    EditFavorite(true,id,basket, {...props})}>
-                      {favorite === true ? "В избранном" : "В избранное"}
+                    <button disabled={favoriteItems.map((item) => item.id).includes(id) ? true : false} className={favoriteItems.map((item) => item.id).includes(id) ? styles.inactive : styles.button} onClick={() => EditFavorite(id)}>
+                      {favoriteItems.map((item) => item.id).includes(id) ? "В избранном" : "В избранное"}
                     </button> 
-                    <button disabled={basket === true} onClick={() => EditBasket(favorite, id, true, {...props})} className={basket === true ? styles.inactiveIcon : styles.icon}>{basket === true ? "В корзине" :  <ShoppingCart color="#fff"/>}</button>
+                    <button disabled={basketItems.map((item) => item.id).includes(id) ? true : false} onClick={() => EditBasket(id)} className={basketItems.map((item) => item.id).includes(id) ? styles.inactiveIcon : styles.icon}>{basketItems.map((item) => item.id).includes(id) ? "В корзине" :  <ShoppingCart color="#fff"/>}</button>
                 </div> 
                 : 
                 <div className={styles.buttons}> <button className={styles.active} disabled>Отсутствует</button></div>

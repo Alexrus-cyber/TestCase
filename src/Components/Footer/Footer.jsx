@@ -3,8 +3,13 @@ import telega from "../../Assets/telegram.png";
 import vk from "../../Assets/vk.png";
 import { memo } from "react";
 import { NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Footer = memo(() => {
+  const {isLoading} = useSelector((state) => state.menu);
+  if (isLoading) {
+    return <div style={{ textAlign: "center", minHeight: "100vh" }}>IsLoading...</div>;
+  }
   const items = [
     {
       id: 2,
@@ -42,7 +47,7 @@ const Footer = memo(() => {
         <div className={styles.center}>
           <div className={styles.info}>
             <p>Телефон: +7(494)910-99-99</p>
-            <p>Резерв столиков по тел. +7(494)910-99-99</p>
+            <p>Резерв стволов по тел. +7(494)910-99-99</p>
           </div>
           <div className={styles.info}>
             <p>Вс-чт: 12.00-0.00</p>

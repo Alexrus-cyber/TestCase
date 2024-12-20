@@ -1,10 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./Header.module.scss";
-import basket from "../../Assets/shopping-bag.png"
-import favorite from "../../Assets/love.png"
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { basketSelector, favoriteSelector } from "../../slices/main";
+import { basketSelector } from "../../slices/basket";
+import { favoriteSelector } from "../../slices/favorite";
 import { ShoppingCart, Star } from "lucide-react";
 
 const Header = () => {

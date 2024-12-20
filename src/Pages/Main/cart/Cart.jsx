@@ -1,10 +1,10 @@
 import React, { use, useCallback } from "react";
 import styles from "./Cart.module.scss";
 import { useDispatch } from "react-redux";
-import { editFavorite, editBasket } from "../../../slices/main";
 import { ShoppingCart } from "lucide-react";
 import { useSelector } from "react-redux";
-import { favoriteSelector, basketSelector } from "../../../slices/main";
+import { basketSelector, editBasket } from "../../../slices/basket";
+import { favoriteSelector, editFavorite} from "../../../slices/favorite";
 
 const Cart = ({favorite,id,basket, items, ...props}) => {
     const favoriteItems = useSelector(favoriteSelector);
@@ -12,7 +12,6 @@ const Cart = ({favorite,id,basket, items, ...props}) => {
 
     const dispatch = useDispatch();
     const EditFavorite = useCallback((itemId) =>{
-        console.log({...props});
         dispatch(editFavorite({itemId, ...props}))
     }     
     , [dispatch]);

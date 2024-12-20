@@ -1,8 +1,9 @@
 import React, { memo, useEffect } from "react";
 import styles from "./Basket.module.scss";
 import { useSelector, useDispatch } from "react-redux";
-import { getMenu, basketSelector } from "../../slices/main";
-import Card from "../Favorites/Card/Card";
+import { getMenu } from "../../slices/main";
+import { basketSelector } from "../../slices/basket";
+import Card from "../../Components/Card/Card";
 
 const Basket = memo (() => {
     const items = useSelector(basketSelector);

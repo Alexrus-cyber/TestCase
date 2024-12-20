@@ -1,8 +1,9 @@
 import React, { memo, useEffect } from "react";
 import styles from "./Favorite.module.scss";
 import { useSelector, useDispatch } from "react-redux";
-import { favoriteSelector, getMenu } from "../../slices/main";
-import Card from "./Card/Card";
+import { getMenu } from "../../slices/main";
+import { favoriteSelector } from "../../slices/favorite";
+import Card from "../../Components/Card/Card";
 
 const Favorite = memo(() => {
     const items = useSelector(favoriteSelector);

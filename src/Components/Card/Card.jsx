@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "./Card.module.scss";
 import { useDispatch } from "react-redux";
-import { editBasket,editFavorite, deleteFavorite, basketSelector, favoriteSelector, deleteBasket } from "../../../slices/main";
+import { editBasket, basketSelector, deleteBasket } from "../../slices/basket";
 import { useCallback } from "react";
 import { CircleX } from "lucide-react";
 import { useSelector } from "react-redux";
+import { favoriteSelector, editFavorite, deleteFavorite } from "../../slices/favorite";
 
 const Card = ({favorite,id, basket, custom, ...props}) => {
     const basketItems = useSelector(basketSelector);

@@ -1,4 +1,4 @@
-@use "../../../functions.scss" as fn;
+@use "../../functions.scss" as fn;
 
 .card{
     display: flex;
@@ -36,7 +36,8 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            row-gap: fn.calcRem(135px);
+            width: fn.calcRem(570px);
+            row-gap: fn.calcRem(105px);
             .discount{
                 display: flex;
                 font-size: fn.calcRem(24px);

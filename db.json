@@ -4,8 +4,8 @@
   },
   "items": [
     {
-      "favorite": false,
-      "basket": false,
+      "favorite": true,
+      "basket": true,
       "itemsPerPage": 6,
       "currentPage": 1,
       "labels": {
@@ -22,8 +22,8 @@
       "id": 608204
     },
     {
-      "favorite": false,
-      "basket": false,
+      "favorite": true,
+      "basket": true,
       "itemsPerPage": 6,
       "currentPage": 1,
       "labels": {

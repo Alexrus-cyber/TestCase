@@ -6,12 +6,12 @@ import {
   import { instance } from "../API/API";
 
 const initialState = {
-    items: [],
+    items: {},
     isLoading: true,
     error: "",
     currentPage: 1,
     itemsPerPage: 6,
-    totalPages: 0
+    totalPages: 0,
   };
 
 export const getMenu = createAsyncThunk(
@@ -19,7 +19,7 @@ export const getMenu = createAsyncThunk(
     async (data, { rejectWithValue }) => {
         try {
             const response = await instance
-            .get(`items`)
+            .get(``)
             .then((response) => response);
             return response.data;
 
@@ -29,47 +29,6 @@ export const getMenu = createAsyncThunk(
     }
 )
 
-export const getTotalPage = createAsyncThunk(
-    'getTotalPage',
-    async (data, { rejectWithValue }) => {
-        try {
-            const response = await instance
-            .get(`countItems`)
-            .then((response) => response);
-            return response.data;
-
-        } catch (e) {
-            return rejectWithValue(e)
-        }
-    }
-)
-
-
-export const editFavorite = createAsyncThunk(
-    'editFavorite',
-    async ({id, ...data}, { rejectWithValue, dispatch }) => {
-        try {
-            await instance
-            .put(`items/${id}`, {...data, favorite: data.favorite})
-            dispatch(getMenu())
-        } catch (e) {
-            return rejectWithValue(e)
-        }
-    }
-)
-
-export const editBasket = createAsyncThunk(
-    'editFavorite',
-    async ({id, ...data}, { rejectWithValue, dispatch }) => {
-        try {
-            await instance
-            .put(`items/${id}`, {...data, basket: data.basket})
-            dispatch(getMenu())
-        } catch (e) {
-            return rejectWithValue(e)
-        }
-    }
-)
 
 export const menuSlice = createSlice({
     name: "menu",
@@ -82,7 +41,7 @@ export const menuSlice = createSlice({
     extraReducers: (builder) => {
         builder
             .addCase(getMenu.pending, (state) => {
-                if (state.items.length === 0) {
+                if (state.items && Object.keys(state.items).length === 0) {
                     state.isLoading = true
                 }else {
                     state.isLoading = false
@@ -90,14 +49,11 @@ export const menuSlice = createSlice({
             })
             .addCase(getMenu.fulfilled, (state, {payload}) => {
                 state.isLoading = false 
-                state.items = payload;
+                state.items = {...payload};
+                state.totalPages = payload.count_items;
             })
             .addCase(getMenu.rejected, (state) => { 
                 state.isLoading = false
-            })
-            .addCase(getTotalPage.fulfilled, (state, {payload}) => {
-                state.isLoading = false 
-                state.totalPages = payload.count;
             })
     },
 });
@@ -111,5 +67,6 @@ export const listMenuSelector = createSelector(
     stateSelector,
     (state) => state.items
   );
+
 
 export default reducer;

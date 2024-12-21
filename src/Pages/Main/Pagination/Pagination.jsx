@@ -18,7 +18,6 @@ const Pagination = () => {
   for (let i = 1; i <= totalPages; i++) {
     pages.push(i);
   }
-  console.log(totalItems);
   return (
     <div>
       <ul className={styles.pagination}>

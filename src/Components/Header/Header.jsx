@@ -1,14 +1,16 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "./Header.module.scss";
-import basket from "../../Assets/shopping-bag.png"
-import favorite from "../../Assets/love.png"
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { listMenuSelector } from "../../slices/main";
+import { basketSelector } from "../../slices/basket";
+import { favoriteSelector } from "../../slices/favorite";
 import { ShoppingCart, Star } from "lucide-react";
 
 const Header = () => {
-    const items = useSelector(listMenuSelector);
+    const itemsFavorite = useSelector(favoriteSelector);
+    const itemsBasket = useSelector(basketSelector);
+    const {isLoading} = useSelector((state) => state.menu);
+
     return (
         <header className={styles.header}>
             <div className={styles.container}>
@@ -16,11 +18,11 @@ const Header = () => {
                 <div className={styles.menu}>
                     <NavLink to={"/basket"} className={styles.img}>
                         <ShoppingCart strokeWidth={1} className={styles.icon} color="#fff" size={32}/>
-                        <div className={styles.counter}>{items.filter((item) => item.basket === true).length}</div>
+                        <div className={styles.counter}>{isLoading ? "0" : itemsBasket.filter((item) => item.basket === true).length}</div>
                     </NavLink>
                     <NavLink to={"/favorite"} className={styles.img}>
                         <Star className={styles.icon} color="#fff"  size={32} strokeWidth={1} background= "red"/>
-                        <div className={styles.counter}>{items.filter((item) => item.favorite === true).length}</div>
+                        <div className={styles.counter}>{isLoading ? "0" : itemsFavorite.filter((item) => item.favorite === true).length}</div>
                     </NavLink>
                 </div>
             </div>

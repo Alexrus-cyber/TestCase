@@ -12,8 +12,9 @@ const initialState = {
 
 export const editBasket = createAsyncThunk(
     'editBasket',
-    async ({ itemId, ...items }, { rejectWithValue }) => {
+    async (items, { rejectWithValue }) => {
         try {
+            console.log(items)
             const data = {
                 ...items,
                 basket: true
@@ -27,7 +28,7 @@ export const editBasket = createAsyncThunk(
 );
 export const deleteBasket = createAsyncThunk(
     'deleteBasket',
-    async ({ itemId, ...items }, { rejectWithValue }) => {
+    async (items, { rejectWithValue }) => {
         try {
             const data = {
                 ...items,

@@ -12,11 +12,10 @@ const initialState = {
 
 export const editFavorite = createAsyncThunk(
     'editFavorite',
-    async ({ itemId, ...items }, { rejectWithValue }) => {
+    async (items, { rejectWithValue }) => {
         try {
             const data = {
                 ...items,
-                id: itemId,
                 favorite: true
             };
             return data;
@@ -28,7 +27,7 @@ export const editFavorite = createAsyncThunk(
 );
 export const deleteFavorite = createAsyncThunk(
     'deleteFavorite',
-    async ({ itemId, ...items }, { rejectWithValue }) => {
+    async (items, { rejectWithValue }) => {
         try {
             const data = {
                 ...items,

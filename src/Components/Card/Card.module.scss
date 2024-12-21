@@ -19,6 +19,10 @@
         width: 100%;
         height: 100%;
         overflow: auto;
+        .buttonsContainer{
+            display: flex;
+            justify-content: space-between;
+        }
         .buttonCancel{
             border: none;
             background-color: transparent;
@@ -37,10 +41,11 @@
             flex-direction: column;
             align-items: flex-start;
             width: fn.calcRem(570px);
-            row-gap: fn.calcRem(105px);
+            row-gap: fn.calcRem(80px);
             .discount{
                 display: flex;
                 font-size: fn.calcRem(24px);
+                gap: fn.calcRem(10px);
             }
             .text{
                 display: flex;
@@ -49,12 +54,26 @@
             .title {
                 display: flex;
                 flex-direction: column;
+                row-gap: fn.calcRem(20px);
                 text-wrap: wrap;
                 text-align: left;
                 font-size: fn.calcRem(22px);
             }
+            .countContainer{
+                display: flex;
+                align-items: center;
+                gap: fn.calcRem(10px);
+                width: fn.calcRem(150px);
+                height: fn.calcRem(37px);
+                p {
+                    display: flex;
+                    justify-content: center;
+                    width: 40px;
+                    font-size: fn.calcRem(24px);
+                }
+            }
         }
-        .count{
+        .bought{
             font-size: 20px;
             display: flex;
             flex-direction: column;
@@ -69,9 +88,13 @@
         .button {
             border: 1px solid orange;
             background-color: transparent;
+            height: fn.calcRem(37px);
             border-radius: 10px;
             padding: 10px;
             color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             transition-duration: 0.5s;
             cursor: pointer;
           }
@@ -84,6 +107,10 @@
             background-color: transparent;
             border-radius: 10px;
             padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-height: 100%;
             color: gray;
             transition-duration: 0.5s;
         }

@@ -11,13 +11,14 @@ const Cart = ({favorite,id,basket, items, ...props}) => {
     const basketItems = useSelector(basketSelector);
 
     const dispatch = useDispatch();
-    const EditFavorite = useCallback((itemId) =>{
-        dispatch(editFavorite({itemId, ...props}))
+    const EditFavorite = useCallback((id) => {
+        dispatch(editFavorite({id, ...props}))
     }     
     , [dispatch]);
-    const EditBasket = useCallback((id) => 
-        dispatch(editBasket({id, ...props}))
-    ,[dispatch]);
+     const EditBasket = useCallback((id) => {
+            dispatch(editBasket({id, ...props}))
+        }
+        ,[dispatch]);
     return (
         <div className={styles.cart}>
             <div className={styles.content}>
